@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roof Pramysa | روف براميزا</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&family=Reem+Kufi:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body onload="filterMenu('meals')">
+
+    <header>
+        <div class="logo"><i class="fas fa-ship"></i> PRAMYSA ROOF</div>
+    </header>
+
+    <section class="hero">
+        <h1>Pramysa</h1>
+        <p>استمتع بسحر النيل وأشهى المأكولات</p>
+    </section>
+
+    <nav class="filter-container">
+        <button class="filter-btn active" onclick="filterMenu('meals')">الوجبات والمشويات</button>
+        <button class="filter-btn" onclick="filterMenu('tagins')">الطواجن</button>
+        <button class="filter-btn" onclick="filterMenu('pizza')">البيتزا والباستا</button>
+        <button class="filter-btn" onclick="filterMenu('sandwiches')">السندوتشات والبرجر</button>
+        <button class="filter-btn" onclick="filterMenu('breakfast')">الفطار</button>
+        <button class="filter-btn" onclick="filterMenu('drinks')">المشروبات</button>
+        <button class="filter-btn" onclick="filterMenu('dessert')">الحلويات</button>
+    </nav>
+
+    <main class="menu-section">
+        <div class="menu-grid" id="menuGrid">
+            <div class="menu-item meals">
+                <img src="assets/images/meals1.jpg" class="item-img">
+                <div class="item-details"><div class="item-name">مكس جريل لحوم</div><div class="item-price">465 ج.م</div></div>
+            </div>
+            <div class="menu-item meals">
+                <img src="assets/images/meals2.jpg" class="item-img">
+                <div class="item-details"><div class="item-name">تشكن كوردن بلو</div><div class="item-price">505 ج.م</div></div>
+            </div>
+            <div class="menu-item tagins">
+                <img src="assets/images/tagin1.jpg" class="item-img">
+                <div class="item-details"><div class="item-name">طاجن عكاوي بالبصل</div><div class="item-price">441 ج.م</div></div>
+            </div>
+            <!-- كرر بقية العناصر هنا بنفس النمط -->
+        </div>
+    </main>
+
+    <div class="social-bar">
+        <a href="https://instagram.com/roof.pyramisa" target="_blank" class="social-btn instagram">
+            <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://facebook.com/Pyramisa.Roof" target="_blank" class="social-btn facebook">
+            <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://wa.me/201091220044" target="_blank" class="social-btn whatsapp">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </div>
+
+    <div class="ocean"><div class="wave"></div></div>
+    
+    <footer>
+        <p>© 2026 براميزا روف - Pramysa Roof</p>
+        <p>الأسعار شاملة ضريبة القيمة المضافة 14%</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
