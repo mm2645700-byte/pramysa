@@ -19,89 +19,96 @@
         <p>استمتع بسحر النيل وأشهى المأكولات</p>
     </section>
 
-    <nav class="filter-container">
-        <button class="filter-btn active" onclick="filterMenu('meals')">الوجبات والمشويات</button>
-        <button class="filter-btn" onclick="filterMenu('tagins')">الطواجن</button>
-        <button class="filter-btn" onclick="filterMenu('pizza')">البيتزا والباستا</button>
-        <button class="filter-btn" onclick="filterMenu('sandwiches')">السندوتشات والبرجر</button>
-        <button class="filter-btn" onclick="filterMenu('breakfast')">الفطار</button>
-        <button class="filter-btn" onclick="filterMenu('drinks')">المشروبات</button>
-        <button class="filter-btn" onclick="filterMenu('dessert')">الحلويات</button>
-    </nav>
+    <div class="filter-container" id="filterBtns">
+        <button class="filter-btn active" onclick="filterMenu('meals')">الوجبات والمشويات</button>
+        <button class="filter-btn" onclick="filterMenu('tagins')">الطواجن</button>
+        <button class="filter-btn" onclick="filterMenu('pizza')">البيتزا والباستا</button>
+        <button class="filter-btn" onclick="filterMenu('sandwiches')">السندوتشات والبرجر</button>
+        <button class="filter-btn" onclick="filterMenu('breakfast')">الفطار</button>
+        <button class="filter-btn" onclick="filterMenu('drinks')">المشروبات</button>
+        <button class="filter-btn" onclick="filterMenu('dessert')">الحلويات</button>
+    </div>
 
-    <main class="menu-section">
-        <div class="menu-grid" id="menuGrid">
-            
-            <div class="menu-item meals">
-                <img src="https://images.pexels.com/photos/5953551/pexels-photo-5953551.jpeg?auto=compress&cs=tinysrgb&w=400" class="item-img">
-                <div class="item-details"><div class="item-name">مكس جريل لحوم</div><div class="item-price">465 ج.م</div></div>
-            </div>
-            <div class="menu-item meals">
-                <img src="https://images.pexels.com/photos/1352273/pexels-photo-1352273.jpeg?auto=compress&cs=tinysrgb&w=400" class="item-img">
-                <div class="item-details"><div class="item-name">تشكن كوردن بلو</div><div class="item-price">505 ج.م</div></div>
-            </div>
-            <div class="menu-item meals">
-                <img src="https://images.pexels.com/photos/699953/pexels-photo-699953.jpeg?auto=compress&cs=tinysrgb&w=400" class="item-img">
-                <div class="item-details"><div class="item-name">ميكس سي فود</div><div class="item-price">565 ج.م</div></div>
-            </div>
+    <section class="menu-section">
+        <div class="menu-grid" id="menuGrid">
+            
+            <!-- الوجبات (Meals) -->
+            <div class="menu-item meals">
+                <img src="https://images.pexels.com/photos/5953551/pexels-photo-5953551.jpeg?auto=compress&cs=tinysrgb&w=400" class="item-img">
+                <div class="item-details"><div class="item-name">مكس جريل لحوم</div><div class="item-price">465 ج.م</div></div>
+            </div>
+            <div class="menu-item meals">
+                <img src="https://images.pexels.com/photos/1352273/pexels-photo-1352273.jpeg?auto=compress&cs=tinysrgb&w=400" class="item-img">
+                <div class="item-details"><div class="item-name">تشكن كوردن بلو</div><div class="item-price">505 ج.م</div></div>
+            </div>
+            <div class="menu-item meals">
+                <img src="https://images.pexels.com/photos/699953/pexels-photo-699953.jpeg?auto=compress&cs=tinysrgb&w=400" class="item-img">
+                <div class="item-details"><div class="item-name">ميكس سي فود</div><div class="item-price">565 ج.م</div></div>
+            </div>
 
-            <div class="menu-item tagins">
-                <img src="https://images.pexels.com/photos/10305713/pexels-photo-10305713.jpeg?auto=compress&cs=tinysrgb&w=400" class="item-img">
-                <div class="item-details"><div class="item-name">طاجن عكاوي بالبصل</div><div class="item-price">441 ج.م</div></div>
-            </div>
-            <div class="menu-item tagins">
-                <img src="https://images.pexels.com/photos/2313686/pexels-photo-2313686.jpeg?auto=compress&cs=tinysrgb&w=400" class="item-img">
-                <div class="item-details"><div class="item-name">طاجن كباب حلة</div><div class="item-price">435 ج.م</div></div>
-            </div>
+            <!-- الطواجن (Tagins) -->
+            <div class="menu-item tagins">
+                <img src="https://images.pexels.com/photos/10305713/pexels-photo-10305713.jpeg?auto=compress&cs=tinysrgb&w=400" class="item-img">
+                <div class="item-details"><div class="item-name">طاجن عكاوي بالبصل</div><div class="item-price">441 ج.م</div></div>
+            </div>
+            <div class="menu-item tagins">
+                <img src="https://images.pexels.com/photos/2313686/pexels-photo-2313686.jpeg?auto=compress&cs=tinysrgb&w=400" class="item-img">
+                <div class="item-details"><div class="item-name">طاجن كباب حلة</div><div class="item-price">435 ج.م</div></div>
+            </div>
 
-            <div class="menu-item pizza">
-                <img src="https://images.pexels.com/photos/825661/pexels-photo-825661.jpeg?auto=compress&cs=tinysrgb&w=400" class="item-img">
-                <div class="item-details"><div class="item-name">بيتزا مارجريتا</div><div class="item-price">179 ج.م</div></div>
-            </div>
-            <div class="menu-item pizza">
-                <img src="https://images.pexels.com/photos/1437267/pexels-photo-1437267.jpeg?auto=compress&cs=tinysrgb&w=400" class="item-img">
-                <div class="item-details"><div class="item-name">باستا سي فود</div><div class="item-price">199 ج.م</div></div>
-            </div>
+            <!-- البيتزا والباستا -->
+            <div class="menu-item pizza">
+                <img src="https://images.pexels.com/photos/825661/pexels-photo-825661.jpeg?auto=compress&cs=tinysrgb&w=400" class="item-img">
+                <div class="item-details"><div class="item-name">بيتزا مارجريتا</div><div class="item-price">179 ج.م</div></div>
+            </div>
+            <div class="menu-item pizza">
+                <img src="https://images.pexels.com/photos/1437267/pexels-photo-1437267.jpeg?auto=compress&cs=tinysrgb&w=400" class="item-img">
+                <div class="item-details"><div class="item-name">باستا سي فود</div><div class="item-price">199 ج.م</div></div>
+            </div>
 
-            <div class="menu-item sandwiches">
-                <img src="https://images.pexels.com/photos/1639562/pexels-photo-1639562.jpeg?auto=compress&cs=tinysrgb&w=400" class="item-img">
-                <div class="item-details"><div class="item-name">كلاسيك برجر</div><div class="item-price">169 ج.م</div></div>
-            </div>
-            <div class="menu-item sandwiches">
-                <img src="https://images.pexels.com/photos/1600711/pexels-photo-1600711.jpeg?auto=compress&cs=tinysrgb&w=400" class="item-img">
-                <div class="item-details"><div class="item-name">سوبر كرانشي سندوتش</div><div class="item-price">151 ج.م</div></div>
-            </div>
+            <!-- السندوتشات والبرجر -->
+            <div class="menu-item sandwiches">
+                <img src="https://images.pexels.com/photos/1639562/pexels-photo-1639562.jpeg?auto=compress&cs=tinysrgb&w=400" class="item-img">
+                <div class="item-details"><div class="item-name">كلاسيك برجر</div><div class="item-price">169 ج.م</div></div>
+            </div>
+            <div class="menu-item sandwiches">
+                <img src="https://images.pexels.com/photos/1600711/pexels-photo-1600711.jpeg?auto=compress&cs=tinysrgb&w=400" class="item-img">
+                <div class="item-details"><div class="item-name">سوبر كرانشي سندوتش</div><div class="item-price">151 ج.م</div></div>
+            </div>
 
-            <div class="menu-item breakfast">
-                <img src="https://images.pexels.com/photos/11051515/pexels-photo-11051515.jpeg?auto=compress&cs=tinysrgb&w=400" class="item-img">
-                <div class="item-details"><div class="item-name">طبق فول زيت حار</div><div class="item-price">39 ج.م</div></div>
-            </div>
-            <div class="menu-item breakfast">
-                <img src="https://images.pexels.com/photos/103124/pexels-photo-103124.jpeg?auto=compress&cs=tinysrgb&w=400" class="item-img">
-                <div class="item-details"><div class="item-name">بيض أومليت</div><div class="item-price">37 ج.م</div></div>
-            </div>
+            <!-- الفطار -->
+            <div class="menu-item breakfast">
+                <img src="https://images.pexels.com/photos/11051515/pexels-photo-11051515.jpeg?auto=compress&cs=tinysrgb&w=400" class="item-img">
+                <div class="item-details"><div class="item-name">طبق فول زيت حار</div><div class="item-price">39 ج.م</div></div>
+            </div>
+            <div class="menu-item breakfast">
+                <img src="https://images.pexels.com/photos/103124/pexels-photo-103124.jpeg?auto=compress&cs=tinysrgb&w=400" class="item-img">
+                <div class="item-details"><div class="item-name">بيض أومليت</div><div class="item-price">37 ج.م</div></div>
+            </div>
 
-            <div class="menu-item drinks">
-                <img src="https://images.pexels.com/photos/312418/pexels-photo-312418.jpeg?auto=compress&cs=tinysrgb&w=400" class="item-img">
-                <div class="item-details"><div class="item-name">قهوة تركي</div><div class="item-price">59 ج.م</div></div>
-            </div>
-            <div class="menu-item drinks">
-                <img src="https://images.pexels.com/photos/602750/pexels-photo-602750.jpeg?auto=compress&cs=tinysrgb&w=400" class="item-img">
-                <div class="item-details"><div class="item-name">كوكتيل رويال</div><div class="item-price">108 ج.م</div></div>
-            </div>
-            <div class="menu-item drinks">
-                <img src="https://images.pexels.com/photos/1187317/pexels-photo-1187317.jpeg?auto=compress&cs=tinysrgb&w=400" class="item-img">
-                <div class="item-details"><div class="item-name">سموزي مانجو</div><div class="item-price">99 ج.م</div></div>
-            </div>
+            <!-- المشروبات (Drinks) -->
+            <div class="menu-item drinks">
+                <img src="https://images.pexels.com/photos/312418/pexels-photo-312418.jpeg?auto=compress&cs=tinysrgb&w=400" class="item-img">
+                <div class="item-details"><div class="item-name">قهوة تركي</div><div class="item-price">59 ج.م</div></div>
+            </div>
+            <div class="menu-item drinks">
+                <img src="https://images.pexels.com/photos/602750/pexels-photo-602750.jpeg?auto=compress&cs=tinysrgb&w=400" class="item-img">
+                <div class="item-details"><div class="item-name">كوكتيل رويال</div><div class="item-price">108 ج.م</div></div>
+            </div>
+            <div class="menu-item drinks">
+                <img src="https://images.pexels.com/photos/1187317/pexels-photo-1187317.jpeg?auto=compress&cs=tinysrgb&w=400" class="item-img">
+                <div class="item-details"><div class="item-name">سموزي مانجو</div><div class="item-price">99 ج.م</div></div>
+            </div>
 
-            <div class="menu-item dessert">
-                <img src="https://images.pexels.com/photos/45202/brownie-dessert-cake-sweet-45202.jpeg?auto=compress&cs=tinysrgb&w=400" class="item-img">
-                <div class="item-details"><div class="item-name">مولتن كيك</div><div class="item-price">119 ج.م</div></div>
-            </div>
-            <div class="menu-item dessert">
-                <img src="https://images.pexels.com/photos/376464/pexels-photo-376464.jpeg?auto=compress&cs=tinysrgb&w=400" class="item-img">
-                <div class="item-details"><div class="item-name">وافل شوكولاتة</div><div class="item-price">116 ج.م</div></div>
-            </div>
+            <!-- الحلويات (Dessert) -->
+            <div class="menu-item dessert">
+                <img src="https://images.pexels.com/photos/45202/brownie-dessert-cake-sweet-45202.jpeg?auto=compress&cs=tinysrgb&w=400" class="item-img">
+                <div class="item-details"><div class="item-name">مولتن كيك</div><div class="item-price">119 ج.م</div></div>
+            </div>
+            <div class="menu-item dessert">
+                <img src="https://images.pexels.com/photos/376464/pexels-photo-376464.jpeg?auto=compress&cs=tinysrgb&w=400" class="item-img">
+                <div class="item-details"><div class="item-name">وافل شوكولاتة</div><div class="item-price">116 ج.م</div></div>
+            </div>
 
         </div>
     </main>
